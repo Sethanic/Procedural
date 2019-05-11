@@ -10,6 +10,9 @@ public class MapGen : MonoBehaviour
     [Range(0, 100)]
     public int PercentFilled;
 
+    public string Seed;
+    public bool UseRandomSeed;
+
     int[,] map;
 
     void Start()
@@ -20,5 +23,15 @@ public class MapGen : MonoBehaviour
     void GenerateMap()
     {
         map = new int[width, height];
+    }
+
+    void RandomFillMap () 
+    {
+        if (UseRandomSeed)
+        {
+            Seed = Time.time.ToString();
+        }
+
+        System.Random random = new System.Random(Seed.GetHashCode());
     }
 }
