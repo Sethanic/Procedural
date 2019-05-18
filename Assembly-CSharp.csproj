@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\MapGen.cs" />
+     <Compile Include="Assets\Scripts\MeshGen.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/coder/Projects/Procedural/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
